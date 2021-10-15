@@ -20,6 +20,7 @@ double itc_pow(int num, int n){
 
 bool itc_mirror_num(long long number){
     if (number < 0) number = -number;
+    if (number == 0) return true;
     if (number % 10 == 0) return false;
     int res = 0;
     int oldnum = number;
