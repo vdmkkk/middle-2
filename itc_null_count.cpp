@@ -1,6 +1,7 @@
 #include "middle.h"
 
 int itc_null_count(long long number){
+    if (number == 0) return 1;
     if (number < 0) number = -number;
     int counter = 0;
     while (number > 0){
