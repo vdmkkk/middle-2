@@ -4,8 +4,8 @@
 using namespace std;
 
 // easy functions:
-int itc_abs(int num);
-double itc_pow(int num, int n);
+long long itc_abs(long long num);
+double itc_pow(long long num, long long n);
 
 // middle functions:
 
