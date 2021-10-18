@@ -1,15 +1,15 @@
 #include "middle.h"
 
 
-int itc_abs(int num){
+int itc_abs(long long num){
     if (num >= 0) return num;
     return -num;
 }
 
 
-double itc_pow(int num, int n){
+double itc_pow(long long num, long long n){
     if (n == 0) return 1;
-    int res = num;
+    long long res = num;
     for (int i=1; i < itc_abs(n); i++){
         res *= num;
     }
