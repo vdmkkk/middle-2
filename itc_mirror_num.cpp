@@ -1,7 +1,7 @@
 #include "middle.h"
 
 
-int itc_abs(long long num){
+long long itc_abs(long long num){
     if (num >= 0) return num;
     return -num;
 }
