@@ -2,13 +2,12 @@
 
 
 long long itc_bin_num(long long number) {
-    if (number < 0) number = -number;
     long long res = 0;
     int counter = 0;
-    while (number > 0){
-        res += number % 2 * itc_pow(10, counter);
-        number /= 10;
+    while (num > 0){
+        res += (num % 2) * itc_pow(10, counter);
         counter += 1;
+        num /= 2;
     }
     return res;
 }
